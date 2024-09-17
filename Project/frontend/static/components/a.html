@@ -1,0 +1,117 @@
+
+
+const feed={
+  data(){
+      return{
+
+      }
+  },
+  methods:{
+
+  },
+  template:`<style>
+      #leftpane {
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      
+      #main {
+        height: 100vh;
+        padding: 30px;
+      }
+      
+      #rightpane {
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      
+      .card {
+        margin-bottom: 30px;
+      }
+      
+      @media (min-width: 768px) {
+        #leftpane {
+          width: 25%;
+          float: left;
+          position: fixed;
+        }
+        
+        #main {
+          margin-left: 25%;
+          width: 60%;
+        }
+        
+        #rightpane {
+          width: 15%;
+          float: right;
+          position: fixed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="leftpane">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Following</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+          </tr>
+          <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+          </tr>
+          <tr>
+            <td>Row 3, Column 1</td>
+            <td>Row 3, Column 2</td>
+          </tr>
+          <tr>
+            <td>Row 4, Column 1</td>
+            <td>Row 4, Column 2</td>
+          </tr>
+          <tr>
+            <td>Row 5, Column 1</td>
+            <td>Row 5, Column 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div id="main">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">This is the first card.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">This is the second card.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card 3</h5>
+          <p class="card-text">This is the third card.</p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
+  `,
+}
+
+
+export default feed

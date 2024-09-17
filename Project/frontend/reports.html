@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monthly Reports for {{ posts[0].username }}</title>
+  </head>
+  <body>
+    <h1>Monthly Reports for {{ posts[0].username }}</h1>
+    {% if posts %}
+      <ul>
+        {% for post in posts %}
+          <li>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post['caption'] }}</p>
+            <img src="data:image/jpeg;base64,{{ post['image'] }}" alt="{{ post['title'] }}" style="height:500px;width:500px;">
+            <p>Submitted by {{ post['username'] }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No posts found for the last 30 days.</p>
+    {% endif %}
+  </body>
+</html>
