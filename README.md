@@ -50,5 +50,5 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/blog-lite-v2.git
+git clone https://github.com/mishrachaitanya/blog-lite-v2.git
 cd blog-lite-v2
