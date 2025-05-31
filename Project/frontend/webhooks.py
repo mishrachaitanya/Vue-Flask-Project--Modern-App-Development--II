@@ -21,7 +21,7 @@ def send_reminder():
     print(non_user)
     for i in non_user:        
         """Hangouts Chat incoming webhook quickstart."""
-        url = 'https://chat.googleapis.com/v1/spaces/AAAAi3-qsKY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=91WLUNybB-ANCKXpzwXgY3UESW8d8o_VjUSHYgjaEj4%3D'
+        url = 'https://chat.googleapis.com/v1/spaces/AAAAi3-qsKY/messages'
         bot_message = {
             'text': f"Why you NO posting we WAITING+{i}"}
         message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
@@ -65,9 +65,7 @@ def send_export_file(blogid,email):
 
 
 
-    # print("I AM HERERERRE")
-    # url = 'https://chat.googleapis.com/v1/spaces/AAAAi3-qsKY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=91WLUNybB-ANCKXpzwXgY3UESW8d8o_VjUSHYgjaEj4%3D'
-    # bot_message = {
+  # bot_message = {
     #     'text': f"Your Report{username}",
     #     "attachments": [
     #         {
