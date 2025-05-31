@@ -90,7 +90,7 @@ def daily_updates(username):
     lists=[]
     list_of_blogs=[]
     url='''https://chat.googleapis.com/v1/spaces/AAAAi3-qsKY/messages?
-    key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=91WLUNybB-ANCKXpzwXgY3UESW8d8
+    key=XYZ
     o_VjUSHYgjaEj4%3D'''
     for i in blogs:
         posts=Posts.query.filter_by(post_id=blogs.blogid).all()
